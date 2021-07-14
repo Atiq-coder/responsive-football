@@ -1,3 +1,21 @@
+/*= Animation =*/
+@keyframes move {
+    0% {
+        margin-left: 10.2rem;
+        width: 100%;
+    }
+    50% {
+        margin-left: 5rem;
+        width: 90%;
+    }
+    100% {
+        margin-left: 0;
+        width: 80%;
+    }
+  }
+
+
+
 *,
 *::after,
 *::before {
@@ -18,9 +36,75 @@ body {
     background: #fff;
 }
 
+
+
+
+/*=== header ===*/
 header{
-    height: 20rem;
+    background: #2D25A0;
+    display: flex;
+    justify-content: center;
 }
+
+.banner__wrap{
+    width: 1160px;
+    display: flex;
+    align-items: center;
+    margin: 6.7rem 0 8.6rem 0;
+}
+
+.banner__wrap:hover .hero__img{
+    margin-left: 0;
+    animation: move ease-in alternate;
+    transition: margin-left 1s;
+}
+.banner__wrap:hover img{
+    width: 80%;
+    transition: width 1s;
+}
+.heading__contant{
+    width: 485px;
+}
+
+.heading__primary{
+    font-size: 64px;
+    line-height: 80px;
+    color: #fff;
+    margin-bottom: 2.7rem;
+}
+
+.btn{
+    background: #E02C6D;
+    padding: 1rem 2.4rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+.btn:hover .fa-arrow-right{
+    margin-left: 1.2rem;
+    transition: margin-left .2s;
+}
+.fa-arrow-right{
+    font-size: 1.1rem;
+    margin-left: .8rem;
+}
+ 
+.hero__img{
+    width: 55.6rem;
+    height: 43.8rem;
+    margin-left: 10.2rem;
+}
+.hero__img img{
+    width: 100%;
+}
+
+
+
+
+
+
 /*=== cards__section ===*/
 #cards__section{
     display: flex;
@@ -261,3 +345,48 @@ header{
 
 
 
+/*===================
+         Media 
+=====================*/
+
+/*=== Tab-port ===*/
+@media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%;
+    }
+
+    /* Header */
+    .banner__wrap{
+        flex-direction: column;
+    }
+    .heading__contant{
+        margin-bottom: 5rem;
+    }
+
+    /* Cards__section */
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* gallery__section */
+    .players__photos--wrap{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+  }
+
+
+  /*=== Phone ===*/
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%;
+    }
+  }
+  
+
+  /*=== Desktop and others ===*/
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%;
+    }
+  }
