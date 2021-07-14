@@ -87,7 +87,7 @@ header{
 }
 
 
-.heading-secondary{
+.heading__secondary{
     font-size: 4.2rem; /* original 48px */
     line-height: 6rem;
     color: #0A0826;
@@ -99,6 +99,39 @@ header{
     color: #6C6C6C;
     margin-bottom: 2.4rem;
 }
+
+
+
+/*=== gallery__section ===*/
+#gallery__section{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    margin-bottom: 6.6rem;
+}
+.galerry__wrap{
+    width: 105rem;
+}
+.players__photos--wrap{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.players__photos{
+    overflow: hidden;
+}
+
+.players__photos img{
+    width: 100%;
+    display: block;
+}
+.players__photos img:hover{
+    transform: scale(1.2);
+    transition: transform .4s;
+}
+
+
+
+
 
 
 
@@ -159,15 +192,6 @@ header{
     color: #666;
     margin-top: 1.5rem;
 }
-
-
-
-
-
-
-
-
-
 
 
 
