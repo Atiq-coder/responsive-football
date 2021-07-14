@@ -15,7 +15,7 @@
   }
 
 
-
+  /*=== Global values ===*/
 *,
 *::after,
 *::before {
@@ -24,11 +24,13 @@
   box-sizing: inherit;
 }
 
+/*=== root: HTML ===*/
 html {
     box-sizing: border-box;
     font-size: 62.5%;/* 1rem = 10px, 10/16 = 62.5%; */
 }
 
+/*=== body ===*/
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
@@ -40,14 +42,15 @@ body {
 
 
 /*=== header ===*/
-header{
+#header{
     background: #2D25A0;
     display: flex;
     justify-content: center;
+    margin-bottom: 7rem;
 }
 
 .banner__wrap{
-    width: 1160px;
+    width: 116rem;
     display: flex;
     align-items: center;
     margin: 6.7rem 0 8.6rem 0;
@@ -58,20 +61,23 @@ header{
     animation: move ease-in alternate;
     transition: margin-left 1s;
 }
+
 .banner__wrap:hover img{
     width: 80%;
     transition: width 1s;
 }
+
 .heading__contant{
-    width: 485px;
+    width: 48.5rem;
 }
 
 .heading__primary{
-    font-size: 64px;
-    line-height: 80px;
+    font-size: 6.4rem;
+    line-height: 8rem;
     color: #fff;
     margin-bottom: 2.7rem;
 }
+
 
 .btn{
     background: #E02C6D;
@@ -80,12 +86,14 @@ header{
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 2.4rem;
 }
+
 .btn:hover .fa-arrow-right{
     margin-left: 1.2rem;
     transition: margin-left .2s;
 }
+
 .fa-arrow-right{
     font-size: 1.1rem;
     margin-left: .8rem;
@@ -96,6 +104,7 @@ header{
     height: 43.8rem;
     margin-left: 10.2rem;
 }
+
 .hero__img img{
     width: 100%;
 }
@@ -111,6 +120,7 @@ header{
     justify-content: center;
     margin-bottom: 16.5rem;
 }
+
 .cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -125,8 +135,8 @@ header{
 }
 
 .card img{
-    width: 300px;
-    height: 256px;
+    width: 30rem;
+    height: 25.6rem;
     margin-bottom: 1.6rem;
 }
 
@@ -166,8 +176,8 @@ header{
 }
 
 .highlights__img img{
-    width: 567px;
-    height: 427px;
+    width: 56.7rem;
+    height: 42.7rem;
 }
 
 
@@ -186,6 +196,7 @@ header{
 
 
 
+
 /*=== gallery__section ===*/
 #gallery__section{
     display: flex;
@@ -193,13 +204,16 @@ header{
     color: #fff;
     margin-bottom: 6.6rem;
 }
+
 .galerry__wrap{
     width: 105rem;
 }
+
 .players__photos--wrap{
     display: grid;
     grid-template-columns: repeat(3,1fr);
 }
+
 .players__photos{
     overflow: hidden;
 }
@@ -208,14 +222,11 @@ header{
     width: 100%;
     display: block;
 }
+
 .players__photos img:hover{
     transform: scale(1.2);
     transition: transform .4s;
 }
-
-
-
-
 
 
 
@@ -228,16 +239,19 @@ header{
     margin-bottom: 6.3rem;
     color: #fff;
 }
+
 .registration__wrap{
     display: flex;
     align-items: center;
     width: 105rem;
     background: #0A0A0B;
 }
+
 .players__img{
     width: 57%;
     height: 31.3rem;
 }
+
 .players__img img{
     width: 100%;
 }
@@ -263,6 +277,7 @@ header{
     font-weight: 700;
     outline: none;
 }
+
 .submit{
     height: 3.5rem;
     width: 10rem;
@@ -286,6 +301,7 @@ header{
     justify-content: center;
     margin-bottom: 6.3rem;
 }
+
 .footer__content{
     width: 48.4rem;
     height: 21.3rem;
@@ -293,10 +309,12 @@ header{
     flex-direction: column;
     align-items: center;
 }
+
 .footer__logo{
     margin-bottom: 2rem;
     height: 11rem;
 }
+
 .footer__logo img{
     width: 100%;
 }
@@ -305,6 +323,7 @@ header{
 .social__icons{
     margin-bottom: 2rem;
 }
+
 .social__list{
     padding: 0;
     margin: 0;
@@ -322,6 +341,7 @@ header{
     align-items: center;
     cursor: pointer;
 }
+
 .social__list .social__item:not(:last-child){
     margin-right: 1.4rem;
 }
@@ -331,6 +351,7 @@ header{
     color: #969BAB;
     font-size: 1.77rem;
 }
+
 .social__list .social__item:hover .social__link{
     color:#E02C6D;
     transition: color .4s;
@@ -349,24 +370,31 @@ header{
          Media 
 =====================*/
 
+
+
 /*=== Tab-port ===*/
 @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%;
     }
 
+
     /* Header */
     .banner__wrap{
         flex-direction: column;
     }
+
     .heading__contant{
         margin-bottom: 5rem;
     }
+
+
 
     /* Cards__section */
     .cards{
         grid-template-columns: repeat(2,1fr);
     }
+    
 
     /* gallery__section */
     .players__photos--wrap{
@@ -376,17 +404,124 @@ header{
   }
 
 
-  /*=== Phone ===*/
-  @media only screen and (max-width: 56.25em) {
+
+
+
+/*=== Phone ===*/
+@media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%;
     }
-  }
-  
 
-  /*=== Desktop and others ===*/
-  @media only screen and (min-width: 112.5em) {
-    html {
-      font-size: 75%;
+
+    /* Header */
+    #header{
+        margin-bottom: 4.7rem;
     }
-  }
+
+    .banner__wrap{
+        flex-direction: column;
+        max-width: 100%;
+        padding: 2rem;
+        margin: 4.2rem 0;
+    }
+
+    .heading__contant{
+        width: 100%;
+    }
+
+    .heading__primary{
+        font-size: 3.6rem;
+        line-height: 5rem;
+    }
+
+    .hero__img{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+    
+
+
+    /* Cards__section */
+    #cards__section{
+        margin-bottom: 6rem;
+    }
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+        grid-column-gap: 2.4rem;
+        margin: 0 1.5rem;
+    }
+
+    .card img{
+        width: 100%
+    }
+
+
+
+    /* highlights__section */
+    #highlights__section{
+        margin-bottom: 3.8rem;
+    }
+
+    .highlights__wrap{
+        flex-direction: column;
+        width: 94%;
+        margin: 0 3%;
+    }
+
+    .highlights__img{
+        margin-top: 3rem;
+    }
+
+    .highlights__img img{
+        max-width: 100%;
+        height: auto;
+    }
+    
+
+
+    /* gallery__section */
+    #gallery__section{
+        margin-bottom: 3.8rem;
+    }
+
+    .players__photos--wrap{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+
+    /* registration__section */
+    #registration__section{
+        margin-bottom: 3.8rem;
+    }
+
+    .registration__wrap{
+        flex-direction: column;
+    }
+
+    .players__img{
+        width: 100%;
+        height: 24rem;
+    }
+
+    .registration__info{
+        width: 100%;
+    }
+
+    .submit{
+        margin: 1rem 0 0 0;
+    }  
+
+}
+
+
+
+
+/*=== Big devices ===*/
+@media only screen and (min-width: 112.5em) {
+    html {
+        font-size: 75%;
+    }
+}
