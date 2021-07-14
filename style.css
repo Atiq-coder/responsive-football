@@ -102,6 +102,76 @@ header{
 
 
 
+
+/*=== registration__section ===*/
+
+#registration__section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6.3rem;
+    color: #fff;
+}
+.registration__wrap{
+    display: flex;
+    align-items: center;
+    width: 105rem;
+    background: #0A0A0B;
+}
+.players__img{
+    width: 57%;
+    height: 31.3rem;
+}
+.players__img img{
+    width: 100%;
+}
+
+.registration__info{
+    width: 50%;
+    padding: 3rem;
+}
+
+.sub__heading{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.heading-tertiary{
+    font-size: 2.5rem;
+}
+
+.email{
+    height: 3.5rem;
+    width: 30rem;
+    padding-left: 1rem;
+    font-weight: 700;
+    outline: none;
+}
+.submit{
+    height: 3.5rem;
+    width: 10rem;
+    background: #E02C6D;
+    border: 0;
+    margin-left: -.5rem;
+}
+
+.Register__text{
+    font-size: 1.1rem;
+    color: #666;
+    margin-top: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*=== footer ===*/
 #footer__section{
     display: flex;
@@ -123,7 +193,7 @@ header{
     width: 100%;
 }
 
-/*= Social nav =*/
+/* Social nav */
 .social__icons{
     margin-bottom: 2rem;
 }
@@ -163,3 +233,7 @@ header{
     line-height: 2.4rem;
     color: #000;
 }
+
+
+
+
