@@ -68,6 +68,7 @@ header{
 #highlights__section{
     display: flex;
     justify-content: center;
+    margin-bottom: 15.8rem;
 }
 
 .highlights__wrap{
@@ -87,8 +88,8 @@ header{
 
 
 .heading-secondary{
-    font-size: 42px; /* original 48px */
-    line-height: 60px;
+    font-size: 4.2rem; /* original 48px */
+    line-height: 6rem;
     color: #0A0826;
 }
 
@@ -97,4 +98,68 @@ header{
     line-height: 2.8rem;
     color: #6C6C6C;
     margin-bottom: 2.4rem;
+}
+
+
+
+/*=== footer ===*/
+#footer__section{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6.3rem;
+}
+.footer__content{
+    width: 48.4rem;
+    height: 21.3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__logo{
+    margin-bottom: 2rem;
+    height: 11rem;
+}
+.footer__logo img{
+    width: 100%;
+}
+
+/*= Social nav =*/
+.social__icons{
+    margin-bottom: 2rem;
+}
+.social__list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.social__list .social__item{
+    list-style: none;
+    background: #E7E7E8;
+    border-radius: 50%;
+    height: 3.2rem;
+    width: 3.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.social__list .social__item:not(:last-child){
+    margin-right: 1.4rem;
+}
+
+.social__list .social__item .social__link{
+    text-decoration: none;
+    color: #969BAB;
+    font-size: 1.77rem;
+}
+.social__list .social__item:hover .social__link{
+    color:#E02C6D;
+    transition: color .4s;
+}
+
+.copyright{
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #000;
 }
